@@ -1,0 +1,57 @@
+.header {
+  &__list {
+    display: none;
+
+    @media all and (min-width: 1000px) {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+
+      right: 10vw;
+      top: 9vh;
+      align-items: center;
+    }
+
+    &__link {
+      color: $coolgray;
+      font-family: $font-poppins;
+      font-size: 0.9em;
+      letter-spacing: 1.5px;
+      padding: 0.5em;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    &__link:hover {
+      color: $autumn;
+      cursor: pointer;
+      font-weight: 600;
+
+    }
+  }
+
+  &__dash {
+    color: $autumn;
+    padding: 0 0.5em;
+  }
+}
+
+.burger {
+  z-index: 5;
+  color: black;
+  // position: absolute;
+  position: fixed;
+  right: 10vw;
+  top: 10vh;
+
+
+
+  @media all and (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.burger:hover {
+  cursor: pointer;
+  color: $coolgray;
+}

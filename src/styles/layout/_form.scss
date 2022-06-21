@@ -1,0 +1,34 @@
+.form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  &__button{
+    padding: 5px 5px 0 0; 
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.fieldset{
+  border: 1px dashed $thepink;
+  width: fit-content;
+  padding: 10px;
+  &__form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: $font-main;
+    &-field{
+      
+    }
+
+    &-field-submit{
+      display: flex;
+      justify-content: right;
+      border: 1px dashed green
+    }
+  }
+  &__label{
+    padding-top: 5px;
+  }
+}

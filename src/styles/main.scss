@@ -1,0 +1,87 @@
+@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/navbar';
+
+@import 'layout/about';
+@import 'layout/welcome';
+@import 'layout/form';
+@import 'layout/logos';
+@import 'layout/tools';
+@import 'layout/role';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/portfolio';
+
+body {
+  // background-color: $light-autumn;
+}
+
+.hero {
+  height: 100%;
+  margin-top: 10vh;
+  //  border: 2px solid blue;
+}
+
+.main__div {
+  @media all and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 3em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  @media all and (min-width: 1000px) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  transform: translateY(-52px);
+  @media all and (min-width: 768px) {
+    position: absolute;
+    // transform: translate(50px,-52px);
+    transform: translateY(-63px);
+    right: 50%;
+  }
+
+  &__item {
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+    transform: rotate(45deg);
+    
+    @media all and (min-width: 768px) {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+// .burger:hover {
+//   color: $coolgray;
+// }
+
+// .link {
+//   color: $light-autumn;
+//   text-decoration: none;
+// }
+
+// .link:hover {
+//   cursor: pointer;
+//   color: $light-autumn;
+//   color: $coolgray;
+  
+
+// }
+

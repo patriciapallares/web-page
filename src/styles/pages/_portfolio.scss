@@ -1,0 +1,207 @@
+.portfolio {
+  padding: 2em;
+  margin-top: 3em;
+  // hola
+
+  @media all and (min-width: 768px) {
+    // border: $coolgray 2px solid;
+    padding: 3em;
+  }
+
+  @media all and (min-width: 1000px) {
+    // border: $coolgray 2px solid;
+    padding: 4em;
+  }
+  &__title {
+    color: $autumn;
+    font-family: $font-poppins;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    align-self: center;
+    padding: 1em 0 2em 0;
+  }
+
+  &__subtitle {
+    color: $coolgray;
+    font-family: $font-poppins;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: left;
+
+    margin-bottom: 3em;
+    @media all and (min-width: 768px) {
+      // border: $coolgray 2px solid;
+      padding-left: 4em;
+    }
+  }
+
+  &__div {
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media all and (min-width: 1000px) {
+      flex-direction: row;
+
+      flex-wrap: wrap;
+
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.portfolioitem {
+  // background-color: $light-autumn;
+
+  margin: 0 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+
+  @media all and (min-width: 768px) {
+    width: 75vw;
+  }
+  @media all and (min-width: 1000px) {
+    width: 40vw;
+  }
+
+  &__div {
+    width: 70vw;
+
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    @media all and (min-width: 1000px) {
+      width: 35vw;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    border: $coolgray 5px solid;
+    width: 70vw;
+    border-radius: 15px 15px 0 0;
+    @media all and (min-width: 1000px) {
+      width: 30vw;
+    }
+  }
+
+  &__title {
+    margin-top: 1.5em;
+    color: $autumn;
+    font-family: $font-poppins;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: left;
+  }
+  &__desc {
+    margin: 1.5em 0 1.5em 0;
+
+    font-family: $font-main;
+    font-size: 1em;
+    text-align: justify;
+    color: $coolgray;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+
+    @media all and (min-width: 768px) {
+      // border: $coolgray 2px solid;
+      // max-width: 75ch;
+      max-width: 50ch;
+      margin: 1.5em 1.5em 0 1em;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media all and (min-width: 768px) {
+      margin-top: 1.5em;
+      flex-direction: column;
+    }
+    @media all and (min-width: 768px) {
+      margin-top: 1.5em;
+      flex-direction: row;
+    }
+  }
+}
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $autumn;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: $coolgray;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-poppins;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin: 5px;
+
+  @media all and (max-width: 768px) {
+    background-color: $autumn;
+    color: $light-autumn;
+  }
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: $light-autumn;
+  background-color: $autumn;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  // width: 200px;
+  // height: 200px;
+  // margin: 0 auto;
+  background-color: lightgray;
+  border-bottom: lightgray 15px solid;
+  border-radius: 15px 15px 10px 10px;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

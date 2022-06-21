@@ -1,0 +1,51 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: $light-autumn;
+  padding: 1.5em;
+
+  //  border: 1px green dashed;
+
+  @media all and (min-width: 768px) {
+    width: 50vw;
+    padding-bottom: 3em;
+  }
+
+  @media all and (min-width: 1000px) {
+    padding-top: 0;
+  }
+
+  &__title {
+    color: $autumn;
+    padding: 1em;
+    font-family: $font-poppins;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2em;
+
+    // border: 1px red dashed;
+  }
+
+  &__text {
+    margin: 0 1.5em 1.5em 1.5em;
+    font-family: $font-main;
+    font-size: 1em;
+    text-align: center;
+    color: $coolgray;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 40ch;
+
+    // border: 1px blue dashed;
+    &__italic {
+      font-style: italic;
+    }
+
+    @media all and (min-width: 768px) {
+      max-width: 40vw;
+      margin: 1.5em 1.5em 0 1.5em;
+    }
+  }
+}

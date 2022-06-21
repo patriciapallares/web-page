@@ -1,0 +1,87 @@
+.role {
+  // border: 3px dashed green;
+  position: absolute;
+  top: 45%;
+  left: 7%;
+
+  @media all and (min-width: 384px) {  
+    top: 45%;
+    left: 13%;
+    z-index: inherit;
+  }
+
+  @media all and (min-width: 600px) {  
+    top: 45%;
+    left: 15%;
+    z-index: inherit;
+  }
+
+  @media all and (min-width: 768px) {  
+    top: 64vh;
+    left: 10vw;
+    }
+
+  @media all and (min-width: 1000px) {  
+      left: 15vw;
+      }
+
+  &__arrow {
+    font-size: 40px;
+
+    // position: fixed;
+    // bottom: 0;
+
+  }
+}
+
+/* CSS */
+.button-52 {
+  font-family: $font-courier;
+  width: fit-content;
+  color: $light-autumn;
+  font-size: 1em;
+  // width: 15ch;
+  text-align: center;
+  line-height: 1.5;
+
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+
+  outline: 0;
+  border: 1px solid $coolgray;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  @media all and (min-width: 768px) {
+    padding: 13px 30px 13px;
+  }
+  @media all and (min-width: 1000px) {
+    padding: 13px 50px 13px;
+  }
+}
+
+.button-52:after {
+  content: '';
+  background-color: $autumn;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+  }
+}
