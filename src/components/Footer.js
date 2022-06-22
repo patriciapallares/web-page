@@ -11,17 +11,17 @@ function Footer() {
 
       <nav>
         <ul className='footer__list'>
-          <li className='hidden'>
+          <li className=''>
             <Link className='footer__list__link' to='/'>Inicio </Link>
           </li>
-          <span className='footer__dash hidden'> - </span>
+          <span className='footer__dash '> - </span>
 
           <li className='hidden'>
             <Link className='footer__list__link' to='/CV'>CV </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
-          <li className='hidden'>
+          <li className=''>
             <Link className='footer__list__link' to='/portfolio'>Portfolio </Link>
           </li>
           <span className='footer__dash hidden'> - </span>

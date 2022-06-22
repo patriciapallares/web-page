@@ -15,7 +15,7 @@ function Header() {
   const [navbarHidden, setNavbarHidden] = useState('hidden');
 
   return (
-    <header className='header hidden' id='top'>
+    <header className='header' id='top'>
       <i
         className={`fa-solid burger fa-bars fa-xl ${burgerHidden}`}
         onClick={handleBurgerClick}
