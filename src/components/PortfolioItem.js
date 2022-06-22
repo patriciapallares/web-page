@@ -16,15 +16,15 @@ function PortfolioItem(props) {
 
       <div className='portfolioitem__div'>
         <p className='portfolioitem__desc'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          {props.description}
+        </p>
+        <p className='portfolioitem__desc'>
+          {props.description2}
         </p>
 
         <div className='portfolioitem__buttons'>
-          <button className='button-28'>Demo</button>
-          <button className='button-28'>Code</button>
+          <a href={props.demolink} target="_blank" rel='noreferrer' className='button-28'>Demo</a>
+          <a href={props.codelink} target="_blank" rel='noreferrer' className='button-28'>Code</a>
         </div>
       </div>
     </article>
