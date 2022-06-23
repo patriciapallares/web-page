@@ -35,7 +35,7 @@
     text-align: center;
     color: $coolgray;
     line-height: 1.5;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.1px;
     max-width: 40ch;
 
     // border: 1px blue dashed;
@@ -44,6 +44,8 @@
     }
 
     @media all and (min-width: 768px) {
+      letter-spacing: 1.5px;
+
       max-width: 40vw;
       margin: 1.5em 1.5em 0 1.5em;
     }

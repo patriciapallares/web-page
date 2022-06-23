@@ -71,11 +71,14 @@
     line-height: 1.5;
     align-self: center;
     justify-self: center;
-    letter-spacing: 1.5px;
-
+    letter-spacing: 1.1px;
     max-width: 40ch;
-
     // border: 2px dashed green;
+
+    @media all and (min-width: 768px) {
+      letter-spacing: 1.5px;
+
+    }
   }
 }
 

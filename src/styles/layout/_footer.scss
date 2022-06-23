@@ -1,8 +1,5 @@
 .footer {
   background-color: $autumn;
-
-  // background-image: url(../../images/low-poly-grid-haikei.png);
-  //  object-fit: cover;
   padding: 2.5em 1.5em 2em 1.5em;
 
   display: flex;
@@ -32,7 +29,7 @@
     font-size: 1.25em;
     text-align: center;
     color: $light-autumn;
-    padding: 1.5em 3em 0 3em;
+    padding: 0 3em 0 3em;
 
     @media all and (min-width: 768px) {
       padding: 1.5em 3em 1.5em 3em;
@@ -42,11 +39,13 @@
   }
 
   &__list {
-    height: 150px;
+    // border: 3px green dashed;
+
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
 
     @media all and (min-width: 768px) {
@@ -56,18 +55,19 @@
       padding-bottom: 0;
       height: 50px;
       width: 450px;
-      justify-content: center;
+      justify-content: space-evenly;
 
     }
     &__link {
       color: $light-autumn;
       font-family: $font-poppins;
       font-size: 0.80em;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.1px;
       text-decoration: none;
       padding: 0.5em;
       @media all and (min-width: 768px) {
         font-size: 0.9em;
+        letter-spacing: 1.5px;
       }
 
     }
@@ -92,11 +92,12 @@
   }
 
   &__dash {
-    display: none;
+    // display: none;
+    color: $autumn;
 
     @media all and (min-width: 768px) {
+      color: $light-autumn;
       display: block;
-      color: brown;
       padding: 0 0.5em;
     }
   }
