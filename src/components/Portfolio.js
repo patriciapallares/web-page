@@ -7,6 +7,11 @@ import captura_ev_inter_react from '../images/ev_inter_react.png';
 import captura_ev_final_js from '../images/ev_final_js.png';
 import captura_ev_final_react from '../images/ev_final_react.png';
 
+import maquetacion_team from '../images/maquetacion_team.png'
+import javascript_team from '../images/javascript_team.png'
+import react_team from '../images/react_team.png'
+
+
 function Portfolio() {
   return (
     <section className='portfolio'>
@@ -60,24 +65,24 @@ function Portfolio() {
         />
       </div>
 
-      <h3 className='portfolio__subtitle hidden'>Proyectos en equipo:</h3>
+      <h3 className='portfolio__subtitle'>Proyectos en equipo:</h3>
 
-      <div className='portfolio__div hidden'>
+      <div className='portfolio__div'>
         <PortfolioItem
-          captura={''}
+          captura={maquetacion_team}
           title='Web presentación Equipo Molino - HTML / CSS'
           demolink='https://patriciapallares.github.io/adalab-maquetacion-team-project/'
           codelink='https://github.com/patriciapallares/adalab-maquetacion-team-project'
         />
         <PortfolioItem
-          captura={''}
-          title=''
-          demolink=''
+          captura={javascript_team}
+          title='Creación de tarjetas - Javascript'
+          demolink='https://patriciapallares.github.io/adalab-javascript-team-project/'
           codelink='https://github.com/patriciapallares/adalab-javascript-team-project'
         />
         <PortfolioItem
-          captura={''}
-          title=''
+          captura={react_team}
+          title='Creación de tarjetas - React'
           demolink=''
           codelink='https://github.com/patriciapallares/adalab-react-team-project'
         />
