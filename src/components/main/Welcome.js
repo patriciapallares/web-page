@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profilePic from '../../images/foto-patricia.png';
+import profilePic from '../../images/fptp.jpg';
 import Role from './Role';
 
 function Welcome() {
