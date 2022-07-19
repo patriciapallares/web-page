@@ -65,9 +65,9 @@ function Portfolio() {
         />
       </div>
 
-      <h3 className='portfolio__subtitle'>Proyectos en equipo:</h3>
+      <h3 className='portfolio__subtitle hidden'>Proyectos en equipo:</h3>
 
-      <div className='portfolio__div'>
+      <div className='portfolio__div hidden'>
         <PortfolioItem
           captura={maquetacion_team}
           title='Web presentación Equipo Molino - HTML / CSS'
