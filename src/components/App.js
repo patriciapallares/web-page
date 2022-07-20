@@ -16,10 +16,8 @@ import {langContext} from '../context/langContext'
 function App() {
 
   const language = useContext(langContext)
-console.log(language);
 
   return (
-    <IntlProvider locale="es-ES" messages={MessageEsp}>
       <div className='page'>
         <Routes>
           <Route
@@ -43,9 +41,7 @@ console.log(language);
             }
           />
         </Routes>
-      </div>
-    </IntlProvider>
-  );
+      </div>  );
 }
 
 export default App;

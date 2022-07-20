@@ -1,14 +1,18 @@
-import { useState } from 'react';
+import { useState , useContext } from 'react';
 import Navbar from '../components/header/Navbar';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import es from '../images/es-ES.png';
 import en from '../images/en-UK.png';
 
-
 import { FormattedMessage } from 'react-intl';
+import {langContext} from '../context/langContext'
 
 function Header() {
+  // language options
+  const language = useContext(langContext);
+
+  // burger menu
   const handleBurgerClick = () => {
     console.log('soy');
     setBurgerHidden('hidden');
@@ -68,8 +72,14 @@ function Header() {
         </ul>
       </nav>
       <div className='header__flags'>
-        <button className='header__flags__button'><img className='header__flags__image' src={es} alt="" ></img></button>
-        <button className='header__flags__button'><img className='header__flags__image' src={en} alt="" ></img></button>
+        <button 
+        className='header__flags__button'
+        onClick={() => language.setLanguage('es-ES')}
+        ><img className='header__flags__image' src={es} alt="" ></img></button>
+        <button 
+        className='header__flags__button'
+        onClick={() => language.setLanguage('en-UK')}
+        ><img className='header__flags__image' src={en} alt="" ></img></button>
 
       </div>
     </header>
