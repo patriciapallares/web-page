@@ -5,5 +5,29 @@
   "about.text2": "I am fluent in three languages and come from a Marketing background – something that I utilise every time I am developing a project. Ensuring the consumers needs and desires are always at the centre of my work.",
   "tools.title": "Tools",
   "menu.home": "Home",
-  "menu.portfolio": "Portfolio"
+  "menu.portfolio": "Portfolio",
+
+  "portfolio.title1": "Corporate website Open Spaces - HTML / CSS",
+  "portfolio.text1_1": "Static web page according to a facilitated design.",
+  "portfolio.text1_2": "To solve it I have used Sass, flexbox and CSS Grid in different sections and media queries to guarantee responsive design. I also used animations and transitions in distinct elements.",
+
+  "portfolio.title2": "Dice and Gambling Game - JavaScript",
+  "portfolio.text2_1": " The program randomly generates a number (1-6). In the game, the user starts with 50 points to bet. The user chooses a number to play and also chooses an amount of points to bet. If the dice lands on that number, the player wins double the points they bet. If not, the player loses the stake. The game ends when the user reaches either 0 or 200 points. ",
+  "portfolio.text2_2": "",
+
+  "portfolio.title3": "Cocktail Finder - JavaScript ",
+  "portfolio.text3_1": " This web application is an online browser of drinks and cocktails from around the world that also allows you to (un)mark your favourites. Saving them in local storage.",
+  "portfolio.text3_2": "After receiving the drinks that match your search word via API, I have developed the necessary functions to paint the different lists and save them locally.",
+
+  "portfolio.title4": "Friends Sentence Filter - React",
+  "portfolio.text4_1": "This application allows us to filter the phrases of the characters from the Friends series, in addition to adding our own phrases.",
+  "portfolio.text4_2": "After showing the phrases obtained through an API, I have controlled the form inputs with state variables and added the necessary events for the app to work.",
+
+  "portfolio.title5": "Owen Wilson Sentence Filter - React ",
+  "portfolio.text5_1": "Catalogue of scenes from movies where the actor Owen Wilson says WOW, with the added function to filter options based on the movie, the year of release and the director. Also, clicking on the scene takes you to a separate page with more information about the movie.",
+  "portfolio.text5_2": "After receiving 50 scenes through an API, I have used the necessary components, state variables and hooks to provide functionality to the page."
 }
+
+
+
+
