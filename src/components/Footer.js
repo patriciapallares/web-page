@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 
+import { FormattedMessage } from 'react-intl';
+
 function Footer() {
   return (
     <footer className='footer'>
@@ -12,27 +14,38 @@ function Footer() {
       <nav>
         <ul className='footer__list'>
           <li className=''>
-            <Link className='footer__list__link' to='/'>Inicio </Link>
+            <Link className='footer__list__link' to='/'>
+              <FormattedMessage id='menu.home' defaultMessage='Home' />
+            </Link>
           </li>
           <span className='footer__dash '> - </span>
 
           <li className='hidden'>
-            <Link className='footer__list__link' to='/CV'>CV </Link>
+            <Link className='footer__list__link' to='/CV'>
+              CV{' '}
+            </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
           <li className=''>
-            <Link className='footer__list__link' to='/portfolio'>Portfolio </Link>
+            <Link className='footer__list__link' to='/portfolio'>
+            <FormattedMessage id='menu.portfolio' defaultMessage='Portfolio' />
+
+            </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
           <li className='hidden '>
-            <Link className='footer__list__link' to='/contacto'>Contacto </Link>
+            <Link className='footer__list__link' to='/contacto'>
+              Contacto{' '}
+            </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
           <li className='hidden '>
-            <Link className='footer__list__link' to='/blog'>Blog </Link>
+            <Link className='footer__list__link' to='/blog'>
+              Blog{' '}
+            </Link>
           </li>
         </ul>
       </nav>

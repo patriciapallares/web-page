@@ -1,9 +1,16 @@
 import React from 'react';
 
+import { FormattedMessage } from 'react-intl';
+
 function Tools() {
   return (
     <section className='tools'>
-      <h2 className='tools__title'>Tools</h2>
+      <h2 className='tools__title'>
+      <FormattedMessage 
+        id="tools.title" 
+        defaultMessage="Tools"
+        />
+      </h2>
       <section>
         <article className='tools__flex'>
           <span className='tools__flex__item'>

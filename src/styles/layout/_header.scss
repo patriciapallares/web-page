@@ -34,6 +34,26 @@
     color: $autumn;
     padding: 0 0.5em;
   }
+
+  &__flags{
+  padding: 10px;
+  position:absolute;
+
+  top: 1vh;
+  @media all and (min-width: 1000px) {
+    right: 2vw;
+  }
+
+    &__button{
+      width: 40px;
+      height: 30px;
+      border: none;
+      background-color: transparent;
+    }
+    &__image{
+      width: 20px;
+    }
+  }
 }
 
 .burger {

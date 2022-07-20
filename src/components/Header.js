@@ -2,7 +2,11 @@ import { useState } from 'react';
 import Navbar from '../components/header/Navbar';
 import { Link } from 'react-router-dom';
 import React from 'react';
+import es from '../images/es-ES.png';
+import en from '../images/en-UK.png';
 
+
+import { FormattedMessage } from 'react-intl';
 
 function Header() {
   const handleBurgerClick = () => {
@@ -30,26 +34,44 @@ function Header() {
       <nav>
         <ul className='header__list'>
           <li className='   '>
-            <Link className='header__list__link' to='/'>Inicio </Link>
+            <Link className='header__list__link' to='/'>
+              <FormattedMessage id='menu.home' defaultMessage='Home' />
+            </Link>
           </li>
           <span className='header__dash   '> - </span>
           <li className='  hidden '>
-            <Link className='header__list__link' to='/CV'>CV </Link>
+            <Link className='header__list__link' to='/CV'>
+              CV{' '}
+            </Link>
           </li>
           <span className='header__dash hidden  '> - </span>
           <li className=''>
-            <Link className='header__list__link' to='/portfolio'>Portfolio </Link>
+            <Link className='header__list__link' to='/portfolio'>
+              <FormattedMessage
+                id='menu.portfolio'
+                defaultMessage='Portfolio'
+              />
+            </Link>
           </li>
           <span className='header__dash  hidden '> - </span>
           <li className=' hidden  '>
-            <Link className='header__list__link' to='/contacto'>Contacto </Link>
+            <Link className='header__list__link' to='/contacto'>
+              Contacto{' '}
+            </Link>
           </li>
           <span className='header__dash hidden  '> - </span>
           <li className=' hidden  '>
-            <Link className='header__list__link' to='/blog'>Blog </Link>
+            <Link className='header__list__link' to='/blog'>
+              Blog{' '}
+            </Link>
           </li>
         </ul>
       </nav>
+      <div className='header__flags'>
+        <button className='header__flags__button'><img className='header__flags__image' src={es} alt="" ></img></button>
+        <button className='header__flags__button'><img className='header__flags__image' src={en} alt="" ></img></button>
+
+      </div>
     </header>
   );
 }

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 
+import { FormattedMessage } from 'react-intl';
+
 function Navbar(props) {
   const handleXmarkClick = () => {
     props.setNavbarHidden('hidden');
@@ -21,7 +23,7 @@ function Navbar(props) {
               to='/'
               onClick={handleXmarkClick}
             >
-              Inicio 
+              <FormattedMessage id='menu.home' defaultMessage='Home' />
             </Link>
           </li>
           <span className='navbar__dash   '> - </span>
@@ -32,7 +34,7 @@ function Navbar(props) {
               to='/CV'
               onClick={handleXmarkClick}
             >
-              CV 
+              CV
             </Link>
           </li>
           <span className='navbar__dash hidden  '> - </span>
@@ -43,7 +45,10 @@ function Navbar(props) {
               to='/portfolio'
               onClick={handleXmarkClick}
             >
-              Portfolio 
+              <FormattedMessage
+                id='menu.portfolio'
+                defaultMessage='Portfolio'
+              />
             </Link>
           </li>
           <span className='navbar__dash  hidden '> - </span>
@@ -54,7 +59,7 @@ function Navbar(props) {
               to='/contacto'
               onClick={handleXmarkClick}
             >
-              Contacto 
+              Contacto
             </Link>
           </li>
           <span className='navbar__dash  hidden  '> - </span>
@@ -65,7 +70,7 @@ function Navbar(props) {
               to='/blog'
               onClick={handleXmarkClick}
             >
-              Blog 
+              Blog
             </Link>
           </li>
           <span className='navbar__dash  hidden '> - </span>
