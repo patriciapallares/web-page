@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import MessageEng from '../languages/en-UK.json';
 import MessageEsp from '../languages/es-ES.json';
@@ -8,27 +8,44 @@ import { IntlProvider } from 'react-intl';
 const langContext = React.createContext();
 
 const LangProvider = ({ children }) => {
-  const [messages, setMessages] = useState(MessageEng);
-  const [locale, setLocale] = useState('en-UK');
+  let localeDefault;
+  let messagesDefault;
+  const lang = localStorage.getItem('Lang')
 
+  if(lang){
+    localeDefault = lang
+
+    if(lang === 'es-ES'){
+      messagesDefault = MessageEsp
+    } else if (lang === 'en-UK'){
+      messagesDefault = MessageEng
+    } else {
+      localeDefault = 'en-UK'
+      messagesDefault = MessageEng
+    }
+  }
+
+  const [messages, setMessages] = useState(messagesDefault);
+  const [locale, setLocale] = useState(localeDefault);
 
   const setLanguage = (language) => {
-    console.log('soy un click');
-    console.log('messages',messages);
-    console.log('locale',locale);
-  
     switch (language) {
       case 'es-ES':
+        console.log(locale);
         setMessages(MessageEsp);
         setLocale('es-ES');
+        localStorage.setItem('Lang', 'es-ES');
         break;
       case 'en-UK':
+        console.log(locale);
         setMessages(MessageEng);
         setLocale('en-UK');
+        localStorage.setItem('Lang', 'en-UK');
         break;
       default:
         setMessages(MessageEng);
         setLocale('en-UK');
+        localStorage.setItem('Lang', 'en-UK');
     }
   };
 
