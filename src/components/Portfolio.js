@@ -101,7 +101,7 @@ function Portfolio() {
           }
           description2={
             <FormattedMessage
-              id='portfolio.text4_1'
+              id='portfolio.text4_2'
               defaultMessage=' '
             />
           }
