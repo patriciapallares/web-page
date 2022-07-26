@@ -44,6 +44,36 @@
     padding-right: 0.5em;
 
   }
+
+  &__lang{
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    font-size: 1.1em;
+    font-family: $font-poppins;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+
+    &__button{
+      margin: 1px;
+      color: $light-autumn;
+      width: 2.2em;
+      height:2.2em;
+      background-color: transparent;
+      border: 2px solid $light-autumn;
+    }
+  }
+}
+
+.selected{
+  color: $autumn;
+  width: 2.2em;
+  height:2.2em;
+  background-color: $light-autumn;
+  border: 2px solid $light-autumn;
+  font-size: 1.15em;
+
 }
 
 .fa-xmark {

@@ -8,9 +8,9 @@ import en from '../images/en-UK.png';
 import { FormattedMessage } from 'react-intl';
 import {langContext} from '../context/langContext'
 
+// TODO control lang variable so it changes in both flags and button menus (not urgent)
+
 function Header() {
-
-
   // language options
   const language = useContext(langContext);
 
