@@ -9,6 +9,13 @@ function Navbar(props) {
     props.setBurgerHidden('');
   };
 
+  /**
+   * Desplaza la página hasta la parte superior.
+   */
+  const scrollUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={`navbar  ${props.navbarHidden} `}>
       <i
@@ -17,7 +24,7 @@ function Navbar(props) {
       ></i>
       <nav>
         <ul className='navbar__list'>
-          <li className=' '>
+          <li className='' onClick={scrollUp}>
             <Link
               className='navbar__list__link '
               to='/'
@@ -39,7 +46,7 @@ function Navbar(props) {
           </li>
           <span className='navbar__dash hidden  '> - </span>
 
-          <li className=' '>
+          <li className=' ' onClick={scrollUp}>
             <Link
               className='navbar__list__link '
               to='/portfolio'
