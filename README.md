@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Adding language select input into burger menu  
+
+1. Create language select input into burger menu
+2. Style it
+3. Add functionality
+  - Control input value state 
+  - Replicate functionality as with flag icons
