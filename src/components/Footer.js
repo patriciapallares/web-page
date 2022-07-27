@@ -11,9 +11,9 @@ function Footer() {
 
   return (
     <footer className='footer'>
-      <div className='square'>
+      {/* <div className='square'>
         <div className='square__item'></div>
-      </div>
+      </div> */}
       <h2 className='footer__title'>&#60; patricia &#62;</h2>
 
       <nav>

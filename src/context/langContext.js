@@ -31,13 +31,11 @@ const LangProvider = ({ children }) => {
   const setLanguage = (language) => {
     switch (language) {
       case 'es-ES':
-        console.log(locale);
         setMessages(MessageEsp);
         setLocale('es-ES');
         localStorage.setItem('Lang', 'es-ES');
         break;
       case 'en-UK':
-        console.log(locale);
         setMessages(MessageEng);
         setLocale('en-UK');
         localStorage.setItem('Lang', 'en-UK');
