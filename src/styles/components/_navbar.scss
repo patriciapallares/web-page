@@ -40,7 +40,7 @@
     }
   }
   &__dash{
-    color: $coolgray;
+    color: $autumn;
     padding-right: 0.5em;
 
   }
@@ -61,20 +61,21 @@
       width: 2.2em;
       height:2.2em;
       background-color: transparent;
+      border: transparent
+    }
+
+    &__selected{
+      color: $autumn;
+      width: 2.2em;
+      height:2.2em;
+      background-color: $light-autumn;
       border: 2px solid $light-autumn;
+      font-size: 1.05em;
+    
     }
   }
 }
 
-.selected{
-  color: $autumn;
-  width: 2.2em;
-  height:2.2em;
-  background-color: $light-autumn;
-  border: 2px solid $light-autumn;
-  font-size: 1.15em;
-
-}
 
 .fa-xmark {
   position: absolute;

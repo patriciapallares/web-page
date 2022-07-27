@@ -1,22 +1,23 @@
-import { useState , useContext } from 'react';
+import { useState } from 'react';
 import Navbar from '../components/header/Navbar';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import es from '../images/es-ES.png';
-import en from '../images/en-UK.png';
 
 import { FormattedMessage } from 'react-intl';
-import {langContext} from '../context/langContext'
+import LanguageBtn from './header/LanguageBtn';
 
-// TODO control lang variable so it changes in both flags and button menus (not urgent)
+// TODO control lang variable so it changes in both flags and button menus
 
 function Header() {
-  // language options
-  const language = useContext(langContext);
+  const [locale, setLocale] = useState('');
+
+  console.log(locale);
+  const updateLocale = (locale) => {
+    setLocale(locale);
+  };
 
   // burger menu
   const handleBurgerClick = () => {
-    console.log('soy');
     setBurgerHidden('hidden');
     setNavbarHidden('');
   };
@@ -36,6 +37,8 @@ function Header() {
         setBurgerHidden={setBurgerHidden}
         navbarHidden={navbarHidden}
         setNavbarHidden={setNavbarHidden}
+        updateLocale={updateLocale}
+        locale={locale}
       />
       <nav>
         <ul className='header__list'>
@@ -73,16 +76,12 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <div className='header__flags'>
-        <button 
-        className='header__flags__button'
-        onClick={() => language.setLanguage('es-ES')}
-        ><img className='header__flags__image' src={es} alt="" ></img></button>
-        <button 
-        className='header__flags__button'
-        onClick={() => language.setLanguage('en-UK')}
-        ><img className='header__flags__image' src={en} alt="" ></img></button>
-
+      <div className='header__lang'>
+        <LanguageBtn
+          updateLocale={updateLocale}
+          locale={locale}
+          class={'header__lang'}
+        />
       </div>
     </header>
   );

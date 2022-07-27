@@ -26,7 +26,6 @@
       color: $autumn;
       cursor: pointer;
       font-weight: 600;
-
     }
   }
 
@@ -35,27 +34,33 @@
     padding: 0 0.5em;
   }
 
-  &__flags{
+  &__lang {
     display: none;
 
-  @media all and (min-width: 1000px) {
-    padding: 10px;
-    position:absolute;
-    display: flex;
-    flex-direction: row;
-    right: 2vw;
-    top: 0;
-
-  }
-
-    &__button{
-      width: 40px;
-      height: 30px;
-      border: none;
-      background-color: transparent;
+    @media all and (min-width: 1000px) {
+      padding: 10px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      right: 1vw;
+      top: 0;
     }
-    &__image{
-      width: 20px;
+
+    &__button {
+      margin: 1px;
+      font-family: $font-poppins;
+      color: $autumn;
+      font-size: 1em;
+      width: 2.2em;
+      height: 2em;
+      background-color: transparent;
+      border: transparent;
+    }
+
+    &__selected{
+      border: 2px solid $autumn;
+      font-size: 1.05em;
+
     }
   }
 }
@@ -67,8 +72,6 @@
   position: fixed;
   right: 10vw;
   top: 10vh;
-
-
 
   @media all and (min-width: 1000px) {
     display: none;

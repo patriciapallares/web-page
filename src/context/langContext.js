@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import MessageEng from '../languages/en-UK.json';
 import MessageEsp from '../languages/es-ES.json';
@@ -27,6 +27,8 @@ const LangProvider = ({ children }) => {
 
   const [messages, setMessages] = useState(messagesDefault);
   const [locale, setLocale] = useState(localeDefault);
+
+  console.log(locale);
 
   const setLanguage = (language) => {
     switch (language) {
