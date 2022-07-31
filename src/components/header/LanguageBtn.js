@@ -21,7 +21,6 @@ function LanguageBtn(props) {
   const [enSelected, setEnSelected] = useState(isSelected('en-UK'));
 
   let classBtn = props.class
-  console.log(classBtn);
 
   const handleESLang = () => {
     language.setLanguage('es-ES');
@@ -42,7 +41,6 @@ function LanguageBtn(props) {
     }
   };
 
-  console.log(`${classBtn}__${esSelected}`);
 
   return (
     <div className={classBtn}>

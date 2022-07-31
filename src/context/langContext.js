@@ -28,7 +28,6 @@ const LangProvider = ({ children }) => {
   const [messages, setMessages] = useState(messagesDefault);
   const [locale, setLocale] = useState(localeDefault);
 
-  console.log(locale);
 
   const setLanguage = (language) => {
     switch (language) {

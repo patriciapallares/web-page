@@ -6,12 +6,11 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import LanguageBtn from './header/LanguageBtn';
 
-// TODO control lang variable so it changes in both flags and button menus
+// TODO control lang variable so it changes in both flags and button menus. Probar con useEffect 
 
 function Header() {
   const [locale, setLocale] = useState('');
 
-  console.log(locale);
   const updateLocale = (locale) => {
     setLocale(locale);
   };
