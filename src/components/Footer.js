@@ -4,10 +4,9 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 function Footer() {
-
   const scrollUp = () => {
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <footer className='footer'>
@@ -19,7 +18,7 @@ function Footer() {
       <nav>
         <ul className='footer__list'>
           <li className='' onClick={scrollUp}>
-            <Link className='footer__list__link' to='/' >
+            <Link className='footer__list__link' to='/'>
               <FormattedMessage id='menu.home' defaultMessage='Home' />
             </Link>
           </li>
@@ -27,29 +26,31 @@ function Footer() {
 
           <li className='hidden'>
             <Link className='footer__list__link' to='/CV'>
-              CV{' '}
+              CV
             </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
           <li className='' onClick={scrollUp}>
             <Link className='footer__list__link' to='/portfolio'>
-            <FormattedMessage id='menu.portfolio' defaultMessage='Portfolio' />
-
+              <FormattedMessage
+                id='menu.portfolio'
+                defaultMessage='Portfolio'
+              />
             </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
           <li className='hidden '>
             <Link className='footer__list__link' to='/contacto'>
-              Contacto{' '}
+              Contacto
             </Link>
           </li>
           <span className='footer__dash hidden'> - </span>
 
           <li className='hidden '>
             <Link className='footer__list__link' to='/blog'>
-              Blog{' '}
+              Blog
             </Link>
           </li>
         </ul>

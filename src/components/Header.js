@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+
 import Navbar from '../components/header/Navbar';
 import { Link } from 'react-router-dom';
-import React from 'react';
 
 import { FormattedMessage } from 'react-intl';
 import LanguageBtn from './header/LanguageBtn';
 
-// TODO control lang variable so it changes in both flags and button menus. Probar con useEffect 
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+// TODO control lang variable so it changes in both flags and button menus. Probar con useEffect
 
 function Header() {
   const [locale, setLocale] = useState('');
@@ -24,8 +28,27 @@ function Header() {
   const [burgerHidden, setBurgerHidden] = useState('');
   const [navbarHidden, setNavbarHidden] = useState('hidden');
 
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    const div = divRef.current;
+
+    gsap.fromTo(
+      div,
+      { delay: 3, opacity: 0 },
+      {
+        delay: 3,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: div,
+        },
+      }
+    );
+  }, []); // dependency array
+
   return (
-    <header className='header' id='top'>
+    <header className='header' id='top' ref={divRef}>
       <i
         className={`fa-solid burger fa-bars fa-xl ${burgerHidden}`}
         onClick={handleBurgerClick}
@@ -49,7 +72,7 @@ function Header() {
           <span className='header__dash   '> - </span>
           <li className='  hidden '>
             <Link className='header__list__link' to='/CV'>
-              CV{' '}
+              CV
             </Link>
           </li>
           <span className='header__dash hidden  '> - </span>
@@ -64,13 +87,13 @@ function Header() {
           <span className='header__dash  hidden '> - </span>
           <li className=' hidden  '>
             <Link className='header__list__link' to='/contacto'>
-              Contacto{' '}
+              Contacto
             </Link>
           </li>
           <span className='header__dash hidden  '> - </span>
           <li className=' hidden  '>
             <Link className='header__list__link' to='/blog'>
-              Blog{' '}
+              Blog
             </Link>
           </li>
         </ul>

@@ -77,3 +77,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 3. Add functionality
   - Control input value state 
   - Replicate functionality as with flag icons
+
+# Adding animations with Greensock (GSAP)
+
+1. Install npm i gsap
+2. Import the pluggins you'll be using. In this case: gsap (S/O to The Code Creative on YT)
+
+
+

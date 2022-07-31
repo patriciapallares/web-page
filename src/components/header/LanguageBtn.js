@@ -12,15 +12,15 @@ function LanguageBtn(props) {
 
   // devuelve selected cuando se cumple que un idioma ha sido devuelto del LS o lo ha pulsado el user, entonces cambia el estado
   const isSelected = (lng) => {
-    if(langLS === lng || props.locale === lng ){
-      return 'selected'
+    if (langLS === lng || props.locale === lng) {
+      return 'selected';
     }
-  }
+  };
 
   const [esSelected, setEsSelected] = useState(isSelected('es-ES'));
   const [enSelected, setEnSelected] = useState(isSelected('en-UK'));
 
-  let classBtn = props.class
+  let classBtn = props.class;
 
   const handleESLang = () => {
     language.setLanguage('es-ES');
@@ -31,7 +31,6 @@ function LanguageBtn(props) {
     }
   };
 
-
   const handleENLang = () => {
     language.setLanguage('en-UK');
     props.updateLocale('en-UK');
@@ -41,16 +40,13 @@ function LanguageBtn(props) {
     }
   };
 
-
   return (
     <div className={classBtn}>
-      {' '}
       <button
         className={`${classBtn}__button ${classBtn}__${esSelected}`}
         // onClick={() => language.setLanguage('es-ES')}
         onClick={handleESLang}
       >
-        {' '}
         ES
       </button>
       <button
@@ -60,7 +56,7 @@ function LanguageBtn(props) {
         onClick={handleENLang}
       >
         EN
-      </button>{' '}
+      </button>
     </div>
   );
 }
