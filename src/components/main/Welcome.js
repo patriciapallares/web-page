@@ -15,6 +15,8 @@ function Welcome() {
           title='foto Patricia'
           className='welcome__imgdiv__photo'
         />
+       <Role />
+
       </div>
       <p className='welcome__title div2'> &#60; patricia &#62; </p>
 
@@ -28,7 +30,6 @@ function Welcome() {
 {/* Welcome user! Mi primer proyecto personal: mi página de portfolio.
 Espero que te entretenga un poco lo que veas y que te animes a darme
 feedback :D */}
-      <Role />
 
     </article>
   );

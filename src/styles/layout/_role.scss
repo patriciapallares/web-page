@@ -1,38 +1,15 @@
 .role {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  
   // border: 3px dashed green;
-  position: absolute;
-  top: 45%;
-  left: 7%;
-
-  margin-top: 1em;
-
-  @media all and (min-width: 384px) {  
-    top: 45%;
-    left: 13%;
-    z-index: inherit;
-  }
-
-  @media all and (min-width: 600px) {  
-    top: 45%;
-    left: 15%;
-    z-index: inherit;
-  }
-
-  @media all and (min-width: 768px) {  
-    top: 64vh;
-    left: 10vw;
-    }
-
+  
   @media all and (min-width: 1000px) {  
-      left: 15vw;
-      }
+    margin-bottom: 0;
+  }
 
   &__arrow {
     font-size: 40px;
-
-    // position: fixed;
-    // bottom: 0;
-
   }
 }
 
