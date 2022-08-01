@@ -1,7 +1,6 @@
 .portfolio {
   padding: 2em;
   margin-top: 3em;
-  // hola
 
   @media all and (min-width: 768px) {
     // border: $coolgray 2px solid;
@@ -22,6 +21,9 @@
     text-align: center;
     align-self: center;
     padding: 1em 0 2em 0;
+
+    // border: $coolgray 2px solid;
+
   }
 
   &__subtitle {
@@ -35,7 +37,7 @@
 
     margin-bottom: 3em;
     @media all and (min-width: 768px) {
-      // border: $coolgray 2px solid;
+      border: $coolgray 2px solid;
       padding-left: 4em;
     }
   }
@@ -59,12 +61,16 @@
 }
 
 .portfolioitem {
-  height: max-content;
+  height: auto;
+  // height: max-content;
   margin: 0 0 3em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em;
+
+  // border: $autumn 2px solid;
+
 
   @media all and (min-width: 768px) {
     margin: 0;
@@ -74,13 +80,23 @@
     width: 40vw;
     max-width: 550px;
     height: 735px;
+    // height: auto;
 
-    padding-bottom: 0;
+
+    // padding-bottom: 0;
 
   }
 
   &__div {
+    // border: green 2px solid;
+
     width: 70vw;
+
+    // height: 100px;
+
+    // overflow: hidden;
+    position: relative;
+
 
     // @media all and (min-width: 768px) {
     //   display: flex;
@@ -114,7 +130,8 @@
   }
   &__desc {
     margin: 1.5em 0 1.5em 0;
-
+    width: 35ch;
+    align-self: center;
     font-family: $font-main;
     font-size: 1em;
     text-align: justify;
@@ -125,6 +142,7 @@
     @media all and (min-width: 768px) {
       // border: $coolgray 2px solid;
       // max-width: 75ch;
+      width: 40ch;
       letter-spacing: 1.5px;
 
       margin: 1.5em 1.5em 0 1em;
@@ -151,6 +169,13 @@
       margin-top: 1.5em;
       flex-direction: row;
     }
+  }
+
+  &__read{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    // transform: translateX( 0px)
   }
 }
 

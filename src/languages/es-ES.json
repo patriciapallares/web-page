@@ -20,7 +20,7 @@
   "portfolio.text3_2": "Tras recibir las bebidas que coincidían en nombre a través de una API, he desarrollado las funciones necesarias para pintar los distintos listados y almacenarlos.",
 
   "portfolio.title4": "Filtro de frases de Friends - React",
-  "portfolio.text4_1": " Aplicación que nos permite filtrar las frases de los personajes de la serie Friends, además de añadir nuestras propias frases",
+  "portfolio.text4_1": " Aplicación que nos permite filtrar las frases de los personajes de la serie Friends, además de añadir nuestras propias frases.",
   "portfolio.text4_2": "Tras pintar las frases conseguidas a través de una API, he controlado los inputs del formulario con variables de estado y añadido los eventos necesarios para que funcione la app.",
 
   "portfolio.title5": "Filtro de frases de Owen Wilson - React",

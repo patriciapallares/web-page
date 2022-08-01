@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function PortfolioItem(props) {
   return (
     <article className='portfolioitem'>
@@ -11,20 +10,32 @@ function PortfolioItem(props) {
           alt='portfolio screenshot'
         />
       </div>
-      
+
       <h2 className='portfolioitem__title'>{props.title}</h2>
 
       <div className='portfolioitem__div'>
-        <p className='portfolioitem__desc'>
-          {props.description}
-        </p>
-        <p className='portfolioitem__desc'>
-          {props.description2}
-        </p>
+        {/* <button className='portfolioitem__read'>+</button> */}
+
+        <p className='portfolioitem__desc'>{props.description}</p>
+        <p className='portfolioitem__desc'>{props.description2}</p>
 
         <div className='portfolioitem__buttons'>
-          <a href={props.demolink} target="_blank" rel='noreferrer' className='button-28'>Demo</a>
-          <a href={props.codelink} target="_blank" rel='noreferrer' className='button-28'>Code</a>
+          <a
+            href={props.demolink}
+            target='_blank'
+            rel='noreferrer'
+            className='button-28'
+          >
+            Demo
+          </a>
+          <a
+            href={props.codelink}
+            target='_blank'
+            rel='noreferrer'
+            className='button-28'
+          >
+            Code
+          </a>
         </div>
       </div>
     </article>
