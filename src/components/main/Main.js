@@ -1,7 +1,7 @@
-import About from './main/About';
-import Role from './main/Role';
-import Tools from './main/Tools';
-import Welcome from './main/Welcome';
+import About from './About';
+import Role from './Role';
+import Tools from './Tools';
+import Welcome from './Welcome';
 import React from 'react';
 
 
@@ -11,12 +11,8 @@ function Main() {
       <section className='hero'>
         <Welcome />
       </section>
-
-
-
       <div className='main__div'>
         <About />
-
         <Tools />
       </div>
 

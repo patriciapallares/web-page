@@ -1,15 +1,15 @@
 import PortfolioItem from './PortfolioItem';
 import React from 'react';
 
-import captura_ev_final_maq from '../images/ev_final_maq.png';
-import captura_ev_inter_js from '../images/ev_inter_js.png';
-import captura_ev_inter_react from '../images/ev_inter_react.png';
-import captura_ev_final_js from '../images/ev_final_js.png';
-import captura_ev_final_react from '../images/ev_final_react.png';
+import captura_ev_final_maq from '../../images/ev_final_maq.png';
+import captura_ev_inter_js from '../../images/ev_inter_js.png';
+import captura_ev_inter_react from '../../images/ev_inter_react.png';
+import captura_ev_final_js from '../../images/ev_final_js.png';
+import captura_ev_final_react from '../../images/ev_final_react.png';
 
-import maquetacion_team from '../images/maquetacion_team.png';
-import javascript_team from '../images/javascript_team.png';
-import react_team from '../images/react_team.png';
+import maquetacion_team from '../../images/maquetacion_team.png';
+import javascript_team from '../../images/javascript_team.png';
+import react_team from '../../images/react_team.png';
 
 import { FormattedMessage } from 'react-intl';
 

@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-import Navbar from '../components/header/Navbar';
+import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 
 import { FormattedMessage } from 'react-intl';
-import LanguageBtn from './header/LanguageBtn';
+import LanguageBtn from './LanguageBtn';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
