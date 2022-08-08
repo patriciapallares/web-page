@@ -22,10 +22,161 @@
     text-align: center;
     align-self: center;
     padding: 1em 0 2em 0;
+  }
+  &__subtitle {
+    color: $coolgray;
+    font-family: $font-poppins;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: left;
 
-    // border: $coolgray 2px solid;
+    margin-bottom: 3em;
+    @media all and (min-width: 768px) {
+      // border: $coolgray 2px solid;
+      padding-left: 4em;
+    }
+  }
+
+  &__list {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @media all and (min-width: 768px) {
+      padding-right: 3rem;
+    }
+
+    &__li{
+
+        position: relative;
+        display: block;
+        padding-left: 30px;
+        margin-bottom: 20px;
+}
+
+    &__li:first-child::before{
+      background-color: $autumn;
+      box-shadow: 0 0 0 2px $autumn;
+    }
+
+    &__li::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -8px;
+      width: 18px;
+      height: 18px;
+      background-color: #e3e5e9;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+  }
+  &__list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 2px;
+    height: 95%;
+    background-color: #e3e5e9;
+    box-sizing: border-box;
+  }
+}
+
+.education {
+  &__date {
+    width: 150px;
+    padding: 6px 20px;
+    background-color: $autumn;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px 0 60px 30px;
+    margin-top: 1.5em;
+  }
+
+  &__info {
+    background-color: #f4f5f8;
+    margin-top: 8px;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  &__role {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__location {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: $autumn;
+  }
+
+  &__description {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: $coolgray;
 
   }
 }
 
+.experience {
+  &__date {
+    width: 150px;
+    padding: 6px 20px;
+    background-color: $autumn;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px 0 60px 30px;
+    margin-top: 1.5em;
+  }
 
+  &__info {
+    background-color: #f4f5f8;
+    margin-top: 8px;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  &__role {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__location {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: $autumn;
+  }
+
+  &__description {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: $coolgray;
+
+  }
+}

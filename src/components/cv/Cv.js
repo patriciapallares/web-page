@@ -3,17 +3,15 @@ import Experience from './Experience';
 
 import React from 'react';
 
-
 function CV() {
   return (
-    <section className='cv' >
+    <section className='cv'>
       <h1 className='cv__title'>CV</h1>
       {/* considerar añadir links a los sitios donde he estudiado y trabjado */}
-      <div  >
-        <h2 className='title'>Formación
-        </h2>
-        <ul>
-          <li>
+      <div className='cv__education'>
+        <h2 className='cv__subtitle'>Formación</h2>
+        <ul className='cv__list'>
+          <li className='cv__list__li'>
             <Education
               date={'Feb. 2022 - May. 2022'}
               title={'Bootcamp desarrollo Front-End'}
@@ -23,7 +21,7 @@ function CV() {
               }
             />
           </li>
-          <li>
+          <li className='cv__list__li'>
             <Education
               date={'Nov. 2021'}
               title={'Curso Community Manager y gestión de RRSS'}
@@ -31,19 +29,29 @@ function CV() {
               description={''}
             />
           </li>
-          <li>
-            <Education date={'2021'} title={'L.2 Certificate in Business Administration'} location={'Bridgwater & Taunton College'} description={''} />
+          <li className='cv__list__li'>
+            <Education
+              date={'2021'}
+              title={'L.2 Certificate in Business Administration'}
+              location={'Bridgwater & Taunton College'}
+              description={''}
+            />
           </li>
-          <li>
-            <Education date={'2013 - 2017'} title={'Grado en Marketing y Dirección Comercial'} location={'Universidad Europea de Valencia'} description={''} />
+          <li className='cv__list__li'>
+            <Education
+              date={'2013 - 2017'}
+              title={'Grado en Marketing y Dirección Comercial'}
+              location={'Universidad Europea de Valencia'}
+              description={''}
+            />
           </li>
         </ul>
       </div>
 
       <div className=''>
-        <h2 classname = 'cv__title'>Experiencia</h2>
-        <ul>
-          <li>
+        <h2 className='cv__subtitle'>Experiencia</h2>
+        <ul className='cv__list'>
+          <li className='cv__list__li'>
             <Experience
               date={'Ene. 2020 - Sep. 2020'}
               role={'Receptionist & Reservations'}
@@ -53,7 +61,7 @@ function CV() {
               }
             />
           </li>
-          <li>
+          <li className='cv__list__li'>
             <Experience
               date={'Sep. 2019 - Ene. 2020'}
               role={'Receptionist'}
@@ -63,7 +71,7 @@ function CV() {
               }
             />
           </li>
-          <li>
+          <li className='cv__list__li'>
             <Experience
               date={'Ago. 2018 - Sep. 2019'}
               role={'Dependienta de tienda'}
@@ -73,7 +81,7 @@ function CV() {
               }
             />
           </li>
-          <li>
+          <li className='cv__list__li'>
             <Experience
               date={'Ene. 2017 - Jun. 2017'}
               role={'Asistente de marketing'}
