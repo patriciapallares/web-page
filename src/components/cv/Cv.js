@@ -6,6 +6,10 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 function CV() {
+
+  console.log(        <FormattedMessage id='cv.download' defaultMessage='Download CV' />
+  );
+
   return (
     <section className='cv parent'>
       <h1 className='cv__title div1'>Curriculum Vitae</h1>

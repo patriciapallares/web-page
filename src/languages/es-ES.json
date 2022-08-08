@@ -12,15 +12,15 @@
   "portfolio.text1_2": "Para resolverlo he usado Sass, flexbox y CSS Grid en distintas secciones y media queries para garantizar el diseño responsive. También usé animaciones y transiciones en distintos elementos. ",
 
   "portfolio.title2": "Juego de dados y apuestas - JavaScript",
-  "portfolio.text2_1": " El programa genera un número (1-6). En el juego, el user empieza con 50 puntos para apostar. El user decide con qué número jugar y también la cantidad de puntos a apostar. Si el user acierta el número, gana el doble de lo que ha apostado. Si no, pierde lo apostado. El juego termina cuando el user llega a 0 o a 200 puntos. ",
+  "portfolio.text2_1": "El programa genera un número (1-6). En el juego, el user empieza con 50 puntos para apostar. El user decide con qué número jugar y también la cantidad de puntos a apostar. Si el user acierta el número, gana el doble de lo que ha apostado. Si no, pierde lo apostado. El juego termina cuando el user llega a 0 o a 200 puntos. ",
   "portfolio.text2_2": "",
 
   "portfolio.title3": "Buscador de cócteles  - JavaScript",
-  "portfolio.text3_1": " Aplicación web que contiene un listado de las bebidas y cócteles de todo el mundo y que permite des/marcar las bebidas como favoritas y guardarlas en Local Storage.",
+  "portfolio.text3_1": "Aplicación web que contiene un listado de las bebidas y cócteles de todo el mundo y que permite des/marcar las bebidas como favoritas y guardarlas en Local Storage.",
   "portfolio.text3_2": "Tras recibir las bebidas que coincidían en nombre a través de una API, he desarrollado las funciones necesarias para pintar los distintos listados y almacenarlos.",
 
   "portfolio.title4": "Filtro de frases de Friends - React",
-  "portfolio.text4_1": " Aplicación que nos permite filtrar las frases de los personajes de la serie Friends, además de añadir nuestras propias frases.",
+  "portfolio.text4_1": "Aplicación que nos permite filtrar las frases de los personajes de la serie Friends, además de añadir nuestras propias frases.",
   "portfolio.text4_2": "Tras pintar las frases conseguidas a través de una API, he controlado los inputs del formulario con variables de estado y añadido los eventos necesarios para que funcione la app.",
 
   "portfolio.title5": "Filtro de frases de Owen Wilson - React",
@@ -34,7 +34,7 @@
   "ed1.date":"Feb. 2022 - May. 2022",
   "ed1.title":"Bootcamp desarrollo Front-End",
   "ed1.location":"Adalab",
-  "ed1.description":"Maquetación: HTML5, CSS3, Fexbox, CSS Grid, diseño responsive, SASS. JavaScript (ES6) y servicios web (APIs) de terceros Control de versiones con Git. Creación de SPAs sencillas con React Conocimientos básicos de APIs y programación back: aplicaciones con Node JS, Express y SQL Manejo de Slack, Github, VS Code, Terminal y Zeplin. Experiencia en el desarrollo de proyectos usando filosofía Agile y marco de trabajo Scrum",
+  "ed1.description":"Maquetación: HTML5, CSS3, Fexbox, CSS Grid, diseño responsive, SASS. JavaScript (ES6) y servicios web (APIs) de terceros. Control de versiones con Git. Creación de SPAs sencillas con React. Conocimientos básicos de APIs y programación back: aplicaciones con Node JS, Express y SQL. Manejo de Slack, Github, VS Code, Terminal y Zeplin. Experiencia en el desarrollo de proyectos usando filosofía Agile y marco de trabajo Scrum",
 
   "ed2.date":"Nov. 2021",
   "ed2.title":"Curso Community Manager y gestión de RRSS",
