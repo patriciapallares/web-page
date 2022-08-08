@@ -5,10 +5,13 @@ import React from 'react';
 
 function CV() {
   return (
-    <section className='cv'>
-      <h1 className='cv__title'>CV</h1>
+    <section className='cv parent'>
+      <h1 className='cv__title div1'>Curriculum Vitae</h1>
       {/* considerar añadir links a los sitios donde he estudiado y trabjado */}
-      <div className='cv__education'>
+
+      <a href="../../docs/Patricia_Pallares_CV.pdf" download="Patricia_Pallares_CV">Download CV</a>
+
+      <div className='cv__section div2'>
         <h2 className='cv__subtitle'>Formación</h2>
         <ul className='cv__list'>
           <li className='cv__list__li'>
@@ -48,7 +51,7 @@ function CV() {
         </ul>
       </div>
 
-      <div className=''>
+      <div className='cv__section div3'>
         <h2 className='cv__subtitle'>Experiencia</h2>
         <ul className='cv__list'>
           <li className='cv__list__li'>
