@@ -39,16 +39,16 @@ function Navbar(props) {
           </li>
           <span className='navbar__dash   '> - </span>
 
-          <li className=' hidden'>
+          <li className=''>
             <Link
               className='navbar__list__link '
-              to='/CV'
+              to='/cv'
               onClick={handleXmarkClick}
             >
               CV
             </Link>
           </li>
-          <span className='navbar__dash hidden  '> - </span>
+          <span className='navbar__dash'> - </span>
 
           <li className=' ' onClick={scrollUp}>
             <Link

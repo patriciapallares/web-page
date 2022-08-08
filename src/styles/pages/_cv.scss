@@ -1,6 +1,31 @@
 .cv {
+  font-family: $font-main;
+  padding: 2em;
+  margin-top: 3em;
+
+  @media all and (min-width: 768px) {
+    // border: $coolgray 2px solid;
+    padding: 3em;
+  }
+
+  @media all and (min-width: 1000px) {
+    // border: $coolgray 2px solid;
+    padding: 4em;
+  }
   &__title {
-    // font-family: $font-main;
-    color: green;
+    color: $autumn;
+    font-family: $font-poppins;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    align-self: center;
+    padding: 1em 0 2em 0;
+
+    // border: $coolgray 2px solid;
+
   }
 }
+
+

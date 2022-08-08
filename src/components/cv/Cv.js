@@ -6,10 +6,11 @@ import React from 'react';
 
 function CV() {
   return (
-    <div>
+    <section className='cv' >
+      <h1 className='cv__title'>CV</h1>
       {/* considerar añadir links a los sitios donde he estudiado y trabjado */}
-      <div>
-        <h2 classname = 'cv__title'>Formación
+      <div  >
+        <h2 className='title'>Formación
         </h2>
         <ul>
           <li>
@@ -39,7 +40,7 @@ function CV() {
         </ul>
       </div>
 
-      <div>
+      <div className=''>
         <h2 classname = 'cv__title'>Experiencia</h2>
         <ul>
           <li>
@@ -84,7 +85,7 @@ function CV() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

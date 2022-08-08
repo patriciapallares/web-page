@@ -70,12 +70,12 @@ function Header() {
             </Link>
           </li>
           <span className='header__dash   '> - </span>
-          <li className='  hidden '>
+          <li className=''>
             <Link className='header__list__link' to='/CV'>
               CV
             </Link>
           </li>
-          <span className='header__dash hidden  '> - </span>
+          <span className='header__dash'> - </span>
           <li className=''>
             <Link className='header__list__link' to='/portfolio'>
               <FormattedMessage

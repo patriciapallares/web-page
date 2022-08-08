@@ -24,12 +24,12 @@ function Footer() {
           </li>
           <span className='footer__dash '> - </span>
 
-          <li className='hidden'>
-            <Link className='footer__list__link' to='/CV'>
+          <li className=''>
+            <Link className='footer__list__link' to='/cv'>
               CV
             </Link>
           </li>
-          <span className='footer__dash hidden'> - </span>
+          <span className='footer__dash '> - </span>
 
           <li className='' onClick={scrollUp}>
             <Link className='footer__list__link' to='/portfolio'>
