@@ -2,10 +2,11 @@ import '../styles/main.scss';
 import Header from './header/Header';
 import Footer from './Footer';
 import Main from './main/Main';
+import Portfolio from './portfolio/Portfolio';
+import CV from './cv/Cv';
 
 import React, {useContext} from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Portfolio from './portfolio/Portfolio';
 
 import { IntlProvider , FormattedMessage} from 'react-intl';
 import MessageEng from '../languages/en-UK.json'
@@ -36,6 +37,16 @@ function App() {
               <>
                 <Header />
                 <Portfolio />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path='/cv'
+            element={
+              <>
+                <Header />
+                <CV />
                 <Footer />
               </>
             }

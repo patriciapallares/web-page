@@ -59,7 +59,7 @@ function Portfolio() {
             />
           }
           demolink='https://patriciapallares.github.io/adalab-javascript-evaluacion-intermedia/'
-          codelink=''
+          codelink='https://github.com/patriciapallares/adalab-javascript-evaluacion-intermedia'
         />
         <PortfolioItem
           captura={captura_ev_final_js}
