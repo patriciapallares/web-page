@@ -25,7 +25,55 @@
 
   "portfolio.title5": "Owen Wilson Sentence Filter - React ",
   "portfolio.text5_1": "Catalogue of scenes from movies where the actor Owen Wilson says WOW, with the added function to filter options based on the movie, the year of release and the director. Also, clicking on the scene takes you to a separate page with more information about the movie.",
-  "portfolio.text5_2": "After receiving 50 scenes through an API, I have used the necessary components, state variables and hooks to provide functionality to the page."
+  "portfolio.text5_2": "After receiving 50 scenes through an API, I have used the necessary components, state variables and hooks to provide functionality to the page.",
+
+  "cv.download": "Download CV",
+  "cv.education": "Education",
+  "cv.experience": "Work experience",
+
+  "ed1.date":"Feb. 2022 - May. 2022",
+  "ed1.title":"Front-End development bootcamp",
+  "ed1.location":"Adalab",
+  "ed1.description":"HTML5, CSS3, Flexbox, CSS Grid, SASS, Bootstrap JavaScript (ES6) and third-party web services (APIs) Version control with Git. Building SPAs with React. Basic knowledge of APIs and back-end programming: applications with Node JS, Express and SQL. Slack, GitHub, VS Code, Gulp, Terminal, Linter, Zeplin. Agile software development (scrum/kanban)",
+
+  "ed2.date":"Nov. 2021",
+  "ed2.title":"Community Manager - Course",
+  "ed2.location":"Ágil centros",
+  "ed2.description":"",
+
+  "ed3.date":"2021",
+  "ed3.title":"L.2 Certificate in Business Administration",
+  "ed3.location":"Bridgwater & Taunton College",
+  "ed3.description":"",
+
+  "ed4.date":"2013 - 2017",
+  "ed4.title":"Bachelor's degree in Marketing",
+  "ed4.location":"Universidad Europea de Valencia",
+  "ed4.description":"",
+
+
+
+  "ex1.date":"Jan. 2020 - Sep. 2020",
+  "ex1.role":"Hotel receptionist & reservations",
+  "ex1.location":"Sanctum Int Serviced Apartments, London",
+  "ex1.description":"",
+
+  "ex2.date":"Sep. 2019 - Jan. 2020",
+  "ex2.role":"Hotel receptionist",
+  "ex2.location":"Park Grand London Paddington, London",
+  "ex2.description":"",
+
+  "ex3.date":"Aug. 2018 - Sep. 2019",
+  "ex3.role":"Sales Assistant",
+  "ex3.location":"Stradivarius Oxford Street, London",
+  "ex3.description":"",
+
+  "ex4.date":"Jan. 2017 - Jun. 2017",
+  "ex4.role":"Marketing Assistant",
+  "ex4.location":"Sarmat Investments Spain LTD, Valencia",
+  "ex4.description":""
+
+  
 }
 
 
