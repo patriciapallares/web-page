@@ -11,18 +11,19 @@ function CV() {
   );
 
   return (
-    <section className='cv parent'>
-      <h1 className='cv__title div1'>Curriculum Vitae</h1>
+    <section className='cv cv-parent'>
+      <h1 className='cv__title cv-div1'>Curriculum Vitae</h1>
       {/* considerar añadir links a los sitios donde he estudiado y trabjado */}
 
-      <a
+      {/* <a
         href='../../docs/Patricia_Pallares_CV.pdf'
         download='Patricia_Pallares_CV'
+        className='cv__download button-28'
       >
         <FormattedMessage id='cv.download' defaultMessage='Download CV' />
-      </a>
+      </a> */}
 
-      <div className='cv__section div2'>
+      <div className='cv__section cv-div2'>
         <h2 className='cv__subtitle'>
           <FormattedMessage id='cv.education' defaultMessage='Education' />
         </h2>
@@ -121,7 +122,7 @@ function CV() {
         </ul>
       </div>
 
-      <div className='cv__section div3'>
+      <div className='cv__section cv-div3'>
         <h2 className='cv__subtitle'>
           
           <FormattedMessage
@@ -219,6 +220,16 @@ function CV() {
           </li>
         </ul>
       </div>
+
+      <button className='button-28 cv-button'>
+      <a
+        href='../../docs/Patricia_Pallares_CV.pdf'
+        download='Patricia_Pallares_CV'
+        className='cv__download'
+      >
+        <FormattedMessage id='cv.download' defaultMessage='Download CV' />
+      </a>
+      </button>
     </section>
   );
 }

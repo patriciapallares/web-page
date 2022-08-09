@@ -2,6 +2,10 @@
   font-family: $font-main;
   padding: 2em;
   margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @media all and (min-width: 768px) {
     // border: $coolgray 2px solid;
@@ -11,6 +15,7 @@
   @media all and (min-width: 1000px) {
     // border: $coolgray 2px solid;
     padding: 4em;
+
   }
   &__title {
     color: $autumn;
@@ -21,7 +26,7 @@
     font-size: 2em;
     text-align: center;
     align-self: center;
-    padding: 1em 0 2em 0;
+    padding: 1em 0 3em 0;
   }
   &__subtitle {
     color: $coolgray;
@@ -30,18 +35,36 @@
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 1.5em;
-    text-align: left;
+    text-align: right;
 
     margin-bottom: 2em;
     @media all and (min-width: 768px) {
       // border: $coolgray 2px solid;
-      padding-left: 4em;
+      padding-right: 4em;
+      margin-bottom: 3em;
     }
   }
 
   &__section {
     margin-bottom: 4em;
+    @media all and (min-width: 1000px) {
+    width: 900px;
+    }
   }
+
+  &__download{
+    text-decoration: none;
+    color: $light-autumn;
+
+    @media all and (min-width: 768px) {
+      color: $autumn;
+    }
+  }
+
+  &__download:hover, cv-button:hover{
+    color: $light-autumn;
+  }
+
 
   &__list {
     position: relative;
@@ -141,32 +164,35 @@
       margin-top: 5px;
       margin-bottom: 10px;
       color: $coolgray;
+
+      line-height: 1.5;
+
     }
   }
 }
 
-.parent {
-  @media all and (min-width: 1000px) {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-}
+// .cv-parent {
+//   @media all and (min-width: 1000px) {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(4, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+//   }
+// }
 
-.div1 {
-  @media all and (min-width: 1000px) {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-}
-.div2 {
-  @media all and (min-width: 1000px) {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-}
-.div3 {
-  @media all and (min-width: 1000px) {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-}
+// .cv-div1 {
+//   @media all and (min-width: 1000px) {
+//     grid-area: 1 / 1 / 2 / 4;
+//   }
+// }
+// .cv-div2 {
+//   @media all and (min-width: 1000px) {
+//     grid-area: 2 / 1 / 4 / 2;
+//   }
+// }
+// .cv-div3 {
+//   @media all and (min-width: 1000px) {
+//     grid-area: 3 / 3 / 5 / 4;
+//   }
+// }
