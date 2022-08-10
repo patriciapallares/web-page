@@ -60,11 +60,11 @@ function About() {
         <FormattedMessage id='about.title' defaultMessage='About' />
       </h2>
       <p className='about__text' ref={textRef}>
-        <FormattedMessage id='about.text1' defaultMessage='' />
+        <FormattedMessage id='about.text1' defaultMessage='A creative, but systematic individual; I am fresh from an intensive bootcamp in front-end development and am eager to start work as a Junior Front-end Developer for your company.' />
       </p>
       {/* Creativa pero sistemática. Así describiría a la programación y así me describo a mí misma. Con formación en marketing y tras haber vivido 3 años en el Reino Unido, estoy dispuesta a afrontar nuevos retos, seguir aprendiendo y <span className='about__text__italic'> think outside the: border-box; </span> */}
       <p className='about__text' ref={text2Ref}>
-        <FormattedMessage id='about.text2' defaultMessage='' />
+        <FormattedMessage id='about.text2' defaultMessage='I am fluent in three languages and come from a Marketing background – something that I utilise every time I am developing a project. Ensuring the consumers needs and desires are always at the centre of my work.' />
       </p>
       {/* Me considero una persona con ojo para el detalle y aunque soy consciente de que la perfección no existe, aspiro a ella con sucesivas aproximaciones. */}
     </section>
