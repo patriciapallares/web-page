@@ -221,7 +221,7 @@ function CV() {
         </ul>
       </div>
 
-      <button className='button-28 cv-button'>
+      {/* <button className='button-28 cv-button'>
       <a
         href='../../docs/Patricia_Pallares_CV.pdf'
         download='Patricia_Pallares_CV'
@@ -229,7 +229,7 @@ function CV() {
       >
         <FormattedMessage id='cv.download' defaultMessage='Download CV' />
       </a>
-      </button>
+      </button> */}
     </section>
   );
 }
